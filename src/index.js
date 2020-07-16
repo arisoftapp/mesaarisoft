@@ -11,6 +11,7 @@ app.use(bodyParser.json())
 app.get('/prueba', (req, res) => {
     res.send({ mensaje: "hola mundo" })
 })
+require('./rutas/login')(app);
 
 app.listen(port, () => {
     console.log("apirest " + port);
