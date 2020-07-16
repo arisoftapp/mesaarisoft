@@ -8,6 +8,10 @@ const port = process.env.PORT || 3100;
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+app.get('/prueba', (req, res) => {
+    res.send({ mensaje: "hola mundo" })
+})
+
 app.listen(port, () => {
     console.log("apirest " + port);
 })
