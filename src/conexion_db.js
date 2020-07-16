@@ -6,4 +6,4 @@ var con = mysql.createConnection({
     password: "arisoft.2019",
     database: "mesa_arisoft_db"
 });
-module.exports = connection;
+module.exports = con;
